@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="val" style="position:fixed;color:red;font-size:2em;border: 1px solid green;padding:5px; border-radious:5px;background-color:grey;">
+
+        </div>
+        <div id="mii">
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+                <p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>
+            </div>
+    </body>
+    <script>
+
+            var p="<p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>";
+            window.onscroll = function() {
+            var pageHeight=document.documentElement.offsetHeight,
+            windowHeight=window.innerHeight,
+            scrollPosition=window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+
+
+            document.getElementById("val").innerHTML=pageHeight+','+windowHeight+','+scrollPosition;
+
+
+            if (pageHeight <= windowHeight+scrollPosition) {
+                alert('At the bottom');
+            }
+            };
+        </script>
+</html>
