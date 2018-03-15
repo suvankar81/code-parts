@@ -29,7 +29,7 @@
             var p="<p>This is a sample Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos iusto unde nulla suscipit aliquid aliquam magni aspernatur, sed saepe ab tenetur eius rerum dolore quae accusamus sit voluptas necessitatibus!</p>";
             window.onscroll = function() {
             var pageHeight=document.documentElement.offsetHeight,
-            windowHeight=window.innerHeight,
+            windowHeight=document.documentElement.scrollTop + window.innerHeight,
             scrollPosition=window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
 
 
