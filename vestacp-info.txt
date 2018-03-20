@@ -1,3 +1,18 @@
 ip files location 
 /etc/httpd/conf.d/ or in apache2 folder
 /usr/local/vesta/data/ips
+
+content of "192.168.1.8"
+-------------------------
+OWNER='admin'
+STATUS='shared'
+NAME=''
+U_SYS_USERS=''
+U_WEB_DOMAINS='0'
+INTERFACE='enp0s3'
+NETMASK='255.255.255.0'
+NAT='103.83.186.202'
+TIME='05:32:42'
+DATE='2018-03-20'
+--------------------------
+
