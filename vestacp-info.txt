@@ -1,0 +1,3 @@
+ip files location 
+/etc/httpd/conf.d/ or in apache2 folder
+/usr/local/vesta/data/ips
