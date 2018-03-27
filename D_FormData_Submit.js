@@ -1,3 +1,4 @@
+//Brawser compatiblity issue in android 4, append with filename issue in I.E. and Edge
 function D_FormData_Submit(d){
     var form = document.forms.namedItem("fileinfo");
 
