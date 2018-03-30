@@ -10,8 +10,10 @@ docker run -it -- rm --name u_fresh01 -p 80:80 -v /home/ov/docker/03/A/:/var/www
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 
-
 //docker start bash u_fresh01
 docker start u_fresh01 
 docker attach u_fresh01 
 docker stop u_fresh01
+
+docker run -it --name tf01 -v ~/tf01:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow
+docker exec -it tf tensorboard --logdir tf_logs/
