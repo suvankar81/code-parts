@@ -16,4 +16,4 @@ docker attach u_fresh01
 docker stop u_fresh01
 
 docker run -it --name tf01 -v ~/tf01:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow
-docker exec -it tf tensorboard --logdir tf_logs/
+docker exec -it tf01 tensorboard --logdir tf_logs/
