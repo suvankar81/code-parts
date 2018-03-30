@@ -5,6 +5,10 @@ docker build -t ub02 .
 
 lsb_release -s -r
 docker run -it --name u_fresh01 -p 80:80 -v /home/ov/docker/03/A/:/var/www/html/ ub02 bash
+docker run -it -- rm --name u_fresh01 -p 80:80 -v /home/ov/docker/03/A/:/var/www/html/ ub02 bash // --rm automatically removes after run
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 
 
 //docker start bash u_fresh01
