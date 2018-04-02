@@ -17,3 +17,13 @@ docker stop u_fresh01
 
 docker run -it --name tf01 -v ~/tf01:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow
 docker exec -it tf01 tensorboard --logdir tf_logs/
+
+sudo docker run --detach \
+    --hostname gitlab.example.com \
+    --publish 443:8443 --publish 80:880 --publish 22:822 \
+    --name gitlab \
+    --restart always \
+    --volume /srv/gitlab/config:/etc/gitlab \
+    --volume /srv/gitlab/logs:/var/log/gitlab \
+    --volume /srv/gitlab/data:/var/opt/gitlab \
+    gitlab/gitlab-ce:latest
