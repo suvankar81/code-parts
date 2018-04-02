@@ -14,6 +14,7 @@ docker rm $(docker ps -a -q)
 docker start u_fresh01 
 docker attach u_fresh01 
 docker stop u_fresh01
+sudo docker exec -it gitlab /bin/bash
 
 docker run -it --name tf01 -v ~/tf01:/notebooks -p 8888:8888 -p 6006:6006 tensorflow/tensorflow
 docker exec -it tf01 tensorboard --logdir tf_logs/
