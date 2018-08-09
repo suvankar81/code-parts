@@ -6,6 +6,7 @@ docker build -t ub02 .
 lsb_release -s -r
 docker run -it --name u_fresh01 -p 80:80 -v /home/ov/docker/03/A/:/var/www/html/ ub02 bash
 docker run -it -- rm --name u_fresh01 -p 80:80 -v /home/ov/docker/03/A/:/var/www/html/ ub02 bash // --rm automatically removes after run
+docker run -d --name=gitea -p 10022:22 -p 10080:3000 -v /var/lib/gitea:/data gitea/gitea:latest
 
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
